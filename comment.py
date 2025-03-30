@@ -36,4 +36,4 @@ def parse(html):
 def write_csv(sight, results):
     """Write fully-loaded comments to csv"""
     df = pd.DataFrame(results, columns=Comment.__dataclass_fields__.keys())
-    df.to_csv(f"sights/{sight}-comments.csv", index=False)
+    df.to_csv(f"../sights-comments/{sight}.csv", index=False)

@@ -6,13 +6,24 @@ from comment import parse, write_csv
 
 base_url = "https://m.ctrip.com/webapp/you/commentWeb/commentList?businessId={}&businessType=sight"
 ids = {
-    # "武夷山": 126481,
     # "五指山": 3211,
-    "尖峰岭": 3233,
+    # "尖峰岭": 3233,
     # "呀诺达": 55820,
     # "水满河": 110178,
     # "七仙岭": 145186,
+    # "霸王岭": 1730760, # 127
+    # "霸王岭_白石潭": 143748445, # 1
+    # "霸王岭_雅加": 143727908,  # 8
+    # "鹦哥岭": 145248513, # 0
+    "黎母山": 18195, # 17
+    # "吊罗山": 21835, # 164
+    # "三江源_chindu": 50054, # 28
+    # "三江源_madoi1": 4575908, # 8
+    # "三江源_madoi2": 5718131, # 8
+    # "三江源_zadoi": 145694557, 
+    # "三江源_qumarleb": 145572672,
     # "大熊猫": 145412216,
+    # "武夷山": 126481,
 }
 urls = {sight: base_url.format(i) for sight, i in ids.items()}
 
