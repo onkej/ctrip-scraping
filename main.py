@@ -4,13 +4,16 @@ from scroll import scroll_down
 from comment import parse, write_csv
 
 
-base_url = "https://m.ctrip.com/webapp/you/commentWeb/commentList?businessId={}&businessType=sight"
+base_url = "https://m.ctrip.com/webapp/you/commentWeb/\
+    commentList?businessId={}&businessType=sight"
+
+# sight_name: sight_id, # sight_comment_count
 ids = {
-    # "五指山": 3211,
-    # "尖峰岭": 3233,
-    # "呀诺达": 55820,
-    # "水满河": 110178,
-    # "七仙岭": 145186,
+    # "五指山": 3211, # 79
+    # "尖峰岭": 3233, # 81
+    # "呀诺达": 55820, # 13760
+    # "水满河": 110178, # 1903
+    # "七仙岭": 145186, # 1288
     # "霸王岭": 1730760, # 127
     # "霸王岭_白石潭": 143748445, # 1
     # "霸王岭_雅加": 143727908,  # 8
@@ -23,7 +26,7 @@ ids = {
     # "三江源_zadoi": 145694557, 
     # "三江源_qumarleb": 145572672,
     # "大熊猫": 145412216,
-    # "武夷山": 126481,
+    # "武夷山": 126481, 
 }
 urls = {sight: base_url.format(i) for sight, i in ids.items()}
 
